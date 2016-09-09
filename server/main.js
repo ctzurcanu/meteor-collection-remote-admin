@@ -14,5 +14,5 @@ Meteor.startup(() => {
 Picker.route('/api/', function(params, req, res, next) {
   var post = Post.find().fetch();
   console.log(JSON.stringify(post))
-  res.end(post);
+  res.end(JSON.stringify(post));
 });
